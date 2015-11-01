@@ -7,6 +7,7 @@ print "What year was grandma born? "
 year_birth_of_grandma = gets.chomp.to_i
 counter = 0
 
+# this loop is to determine if grandma is at least 50 years old
 loop do
   grandma_age = current_year.to_i - year_birth_of_grandma.to_i
   if grandma_age >= 50

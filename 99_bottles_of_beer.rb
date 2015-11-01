@@ -8,7 +8,7 @@ while number_of_bottles > 2
   number_of_bottles = number_of_bottles - 1
 end
 
-#This 'while' loop is to change the word "bottles" from plural to singular in line 13
+#This 'while' loop is to change the word "bottles" from plural to singular in line 14
 while number_of_bottles == 2
   puts number_of_bottles.to_s + " bottles of beer on the wall, " + number_of_bottles.to_s + " bottles of beer. "
   puts "Take one down and pass it around, " + (number_of_bottles - 1).to_s + " bottle of beer on the wall. "
