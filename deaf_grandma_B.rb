@@ -17,7 +17,7 @@ while counter != 2
     puts "Grandma: NOT SINCE, 1912!"
     puts ""
   end
-
+# this 'if' is to count the number of GOODBYEs in the program
   if to_grandma == "GOODBYE"
     counter += 1
   end
