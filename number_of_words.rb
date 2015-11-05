@@ -5,8 +5,8 @@ text_array = []
 text = ""
 count = Hash.new(0)
 
+puts "Write some text (an empty line will end the program): "
 while true
-  puts "Write some text (an empty line will end the program): "
   text = gets.chomp.downcase.tr(",?!.:;", " ")
   text_array << text.split
   if text == ""
@@ -24,5 +24,5 @@ end
 puts "Frequency: "
 puts "="*40
 count = count.sort_by {|key , value| value}.reverse
-#this line sorts by value ans then reverses the array. 
+#this line sorts by value ans then reverses the array.
 count_print = count.each {|total| puts total[0].to_s + " = " + total[1].to_s}
