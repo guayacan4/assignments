@@ -23,8 +23,6 @@ end
 
 puts "Frequency: "
 puts "="*40
-count.sort {|key, value| (value <=> key)}.each {|elem|
-  puts elem[0].to_s + " = " + elem[1].to_s
-}
-#need to understand line 26 better. Tried it with to blocks with do and didn't work,
-#still print the words out of order.
+count = count.sort_by {|key , value| value}.reverse
+#this line sorts by value ans then reverses the array. 
+count_print = count.each {|total| puts total[0].to_s + " = " + total[1].to_s}
